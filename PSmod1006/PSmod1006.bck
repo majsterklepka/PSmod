@@ -1,0 +1,57 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP L7805
+D Positive 1.5A 35V Linear Regulator, Fixed Output xx, TO-220/TO-263/TO-252
+K Voltage Regulator 1.5A Positive
+F http://www.st.com/content/ccc/resource/technical/document/datasheet/41/4f/b3/b0/12/d4/47/88/CD00000444.pdf/files/CD00000444.pdf/jcr:content/translations/en.CD00000444.pdf
+$ENDCMP
+#
+$CMP L7806
+D Positive 1.5A 35V Linear Regulator, Fixed Output xx, TO-220/TO-263/TO-252
+K Voltage Regulator 1.5A Positive
+F http://www.st.com/content/ccc/resource/technical/document/datasheet/41/4f/b3/b0/12/d4/47/88/CD00000444.pdf/files/CD00000444.pdf/jcr:content/translations/en.CD00000444.pdf
+$ENDCMP
+#
+$CMP L7808
+D Positive 1.5A 35V Linear Regulator, Fixed Output xx, TO-220/TO-263/TO-252
+K Voltage Regulator 1.5A Positive
+F http://www.st.com/content/ccc/resource/technical/document/datasheet/41/4f/b3/b0/12/d4/47/88/CD00000444.pdf/files/CD00000444.pdf/jcr:content/translations/en.CD00000444.pdf
+$ENDCMP
+#
+$CMP L7809
+D Positive 1.5A 35V Linear Regulator, Fixed Output xx, TO-220/TO-263/TO-252
+K Voltage Regulator 1.5A Positive
+F http://www.st.com/content/ccc/resource/technical/document/datasheet/41/4f/b3/b0/12/d4/47/88/CD00000444.pdf/files/CD00000444.pdf/jcr:content/translations/en.CD00000444.pdf
+$ENDCMP
+#
+$CMP L7812
+D Positive 1.5A 35V Linear Regulator, Fixed Output xx, TO-220/TO-263/TO-252
+K Voltage Regulator 1.5A Positive
+F http://www.st.com/content/ccc/resource/technical/document/datasheet/41/4f/b3/b0/12/d4/47/88/CD00000444.pdf/files/CD00000444.pdf/jcr:content/translations/en.CD00000444.pdf
+$ENDCMP
+#
+$CMP L7815
+D Positive 1.5A 35V Linear Regulator, Fixed Output xx, TO-220/TO-263/TO-252
+K Voltage Regulator 1.5A Positive
+F http://www.st.com/content/ccc/resource/technical/document/datasheet/41/4f/b3/b0/12/d4/47/88/CD00000444.pdf/files/CD00000444.pdf/jcr:content/translations/en.CD00000444.pdf
+$ENDCMP
+#
+$CMP L7818
+D Positive 1.5A 35V Linear Regulator, Fixed Output xx, TO-220/TO-263/TO-252
+K Voltage Regulator 1.5A Positive
+F http://www.st.com/content/ccc/resource/technical/document/datasheet/41/4f/b3/b0/12/d4/47/88/CD00000444.pdf/files/CD00000444.pdf/jcr:content/translations/en.CD00000444.pdf
+$ENDCMP
+#
+$CMP L7824
+D Positive 1.5A 35V Linear Regulator, Fixed Output xx, TO-220/TO-263/TO-252
+K Voltage Regulator 1.5A Positive
+F http://www.st.com/content/ccc/resource/technical/document/datasheet/41/4f/b3/b0/12/d4/47/88/CD00000444.pdf/files/CD00000444.pdf/jcr:content/translations/en.CD00000444.pdf
+$ENDCMP
+#
+$CMP L78xx
+D Positive 1.5A 35V Linear Regulator, Fixed Output xx, TO-220/TO-263/TO-252
+K Voltage Regulator 1.5A Positive
+F http://www.st.com/content/ccc/resource/technical/document/datasheet/41/4f/b3/b0/12/d4/47/88/CD00000444.pdf/files/CD00000444.pdf/jcr:content/translations/en.CD00000444.pdf
+$ENDCMP
+#
+#End Doc Library

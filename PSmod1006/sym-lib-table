@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name ups-pcb)(type Legacy)(uri ${KIPRJMOD}/ups-pcb.lib)(options "")(descr "project library"))
+)
