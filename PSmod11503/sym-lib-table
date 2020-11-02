@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name PSmod11503)(type Legacy)(uri ${KIPRJMOD}/PSmod11503.lib)(options "")(descr ""))
+)
