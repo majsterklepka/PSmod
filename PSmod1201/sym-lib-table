@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name avr_atmega328_prog_adapter-rescue)(type Legacy)(uri /home/sq7eqe/Dokumenty/Kicad/avr_atmega328_prog_adapter/avr_atmega328_prog_adapter-rescue.lib)(options "")(descr ""))
+)

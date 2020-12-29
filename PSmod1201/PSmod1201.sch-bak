@@ -1,0 +1,807 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A3 16535 11693
+encoding utf-8
+Sheet 1 1
+Title "AVR Prog"
+Date "2020-12-29"
+Rev "1.0"
+Comp "MSc Paweł Sobótka"
+Comment1 "CC-BY-SA"
+Comment2 "by SQ7EQE"
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L avr_atmega328_prog_adapter-rescue:ATmega328P-PU-MCU_Microchip_ATmega U4
+U 1 1 5D8917EB
+P 3000 6750
+F 0 "U4" H 2356 6796 50  0000 R CNN
+F 1 "ATmega48A/PA/88A/PA/168A/PA/328/P" V 2356 6705 50  0000 R CNN
+F 2 "Socket:DIP_Socket-28_W6.9_W7.62_W10.16_W12.7_W13.5_3M_228-4817-00-0602J" H 3000 6750 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/ATmega328_P%20AVR%20MCU%20with%20picoPower%20Technology%20Data%20Sheet%2040001984A.pdf" H 3000 6750 50  0001 C CNN
+	1    3000 6750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 5D892234
+P 2100 5805
+F 0 "C1" H 2215 5851 50  0000 L CNN
+F 1 "0.1u" H 2215 5760 50  0000 L CNN
+F 2 "Capacitor_THT:C_Rect_L7.0mm_W2.0mm_P5.00mm" H 2138 5655 50  0001 C CNN
+F 3 "~" H 2100 5805 50  0001 C CNN
+	1    2100 5805
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 5D8926C3
+P 4050 6700
+F 0 "R4" H 4120 6746 50  0000 L CNN
+F 1 "10k" H 4120 6655 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 3980 6700 50  0001 C CNN
+F 3 "~" H 4050 6700 50  0001 C CNN
+	1    4050 6700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D1
+U 1 1 5D892E00
+P 4800 5550
+F 0 "D1" H 4793 5295 50  0000 C CNN
+F 1 "YELLOW" H 4793 5386 50  0000 C CNN
+F 2 "LED_THT:LED_D3.0mm" H 4800 5550 50  0001 C CNN
+F 3 "~" H 4800 5550 50  0001 C CNN
+	1    4800 5550
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3600 5950 4095 5950
+Wire Wire Line
+	3600 5850 4095 5850
+NoConn ~ 3600 5750
+NoConn ~ 3600 5650
+Text Label 3970 7050 2    50   ~ 0
+~RESET
+Text Label 3950 5850 2    50   ~ 0
+MOSI
+Text Label 3960 5950 2    50   ~ 0
+MISO
+Text Label 3965 6050 2    50   ~ 0
+SCK
+$Comp
+L power:GND #PWR011
+U 1 1 5D89B9A8
+P 5150 5700
+F 0 "#PWR011" H 5150 5450 50  0001 C CNN
+F 1 "GND" H 5155 5527 50  0000 C CNN
+F 2 "" H 5150 5700 50  0001 C CNN
+F 3 "" H 5150 5700 50  0001 C CNN
+	1    5150 5700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5150 5550 4950 5550
+NoConn ~ 3600 6450
+NoConn ~ 3600 6550
+NoConn ~ 3600 6650
+NoConn ~ 3600 6750
+NoConn ~ 3600 6850
+NoConn ~ 3600 6950
+NoConn ~ 3600 7450
+NoConn ~ 3600 7550
+NoConn ~ 3600 7650
+NoConn ~ 3600 7750
+NoConn ~ 3600 7850
+NoConn ~ 3600 7950
+$Comp
+L power:GND #PWR017
+U 1 1 5D8A46E1
+P 3000 8505
+F 0 "#PWR017" H 3000 8255 50  0001 C CNN
+F 1 "GND" H 3005 8332 50  0000 C CNN
+F 2 "" H 3000 8505 50  0001 C CNN
+F 3 "" H 3000 8505 50  0001 C CNN
+	1    3000 8505
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3000 8505 3000 8250
+$Comp
+L power:GND #PWR012
+U 1 1 5D8AB98E
+P 2100 6055
+F 0 "#PWR012" H 2100 5805 50  0001 C CNN
+F 1 "GND" H 2105 5882 50  0000 C CNN
+F 2 "" H 2100 6055 50  0001 C CNN
+F 3 "" H 2100 6055 50  0001 C CNN
+	1    2100 6055
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2100 5955 2100 6055
+Wire Wire Line
+	2400 5550 2100 5550
+Wire Wire Line
+	2100 5550 2100 5655
+Wire Wire Line
+	3000 5250 3000 5050
+Connection ~ 3000 5050
+Wire Wire Line
+	3000 5050 3100 5050
+Wire Wire Line
+	2100 5550 2100 5050
+Connection ~ 2100 5550
+Wire Wire Line
+	2100 5050 2505 5050
+Text Label 3400 2150 2    50   ~ 0
+SCK
+$Comp
+L power:PWR_FLAG #FLG02
+U 1 1 5D8BECEA
+P 2505 5050
+F 0 "#FLG02" H 2505 5125 50  0001 C CNN
+F 1 "PWR_FLAG" H 2505 5223 50  0000 C CNN
+F 2 "" H 2505 5050 50  0001 C CNN
+F 3 "~" H 2505 5050 50  0001 C CNN
+	1    2505 5050
+	1    0    0    -1  
+$EndComp
+Connection ~ 2505 5050
+Wire Wire Line
+	2505 5050 3000 5050
+Wire Wire Line
+	3100 5050 3100 5250
+$Comp
+L Device:Crystal Y1
+U 1 1 5FEA19DC
+P 4700 6400
+F 0 "Y1" V 4654 6531 50  0000 L CNN
+F 1 "16MHz" V 4745 6531 50  0000 L CNN
+F 2 "Crystal:Crystal_HC49-U_Vertical" H 4700 6400 50  0001 C CNN
+F 3 "~" H 4700 6400 50  0001 C CNN
+	1    4700 6400
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 5FEA1F41
+P 4900 6150
+F 0 "C2" V 4850 6250 50  0000 C CNN
+F 1 "22p" V 5000 6300 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm" H 4938 6000 50  0001 C CNN
+F 3 "~" H 4900 6150 50  0001 C CNN
+	1    4900 6150
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C3
+U 1 1 5FEA2743
+P 4900 6650
+F 0 "C3" V 4850 6750 50  0000 C CNN
+F 1 "22p" V 5000 6800 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm" H 4938 6500 50  0001 C CNN
+F 3 "~" H 4900 6650 50  0001 C CNN
+	1    4900 6650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5050 6150 5200 6150
+Wire Wire Line
+	5200 6150 5200 6400
+Wire Wire Line
+	5200 6650 5050 6650
+$Comp
+L power:GND #PWR013
+U 1 1 5FEA784D
+P 5200 6400
+F 0 "#PWR013" H 5200 6150 50  0001 C CNN
+F 1 "GND" H 5205 6227 50  0000 C CNN
+F 2 "" H 5200 6400 50  0001 C CNN
+F 3 "" H 5200 6400 50  0001 C CNN
+	1    5200 6400
+	0    -1   -1   0   
+$EndComp
+Connection ~ 5200 6400
+Wire Wire Line
+	5200 6400 5200 6650
+Wire Wire Line
+	4750 6150 4700 6150
+Wire Wire Line
+	4700 6150 4700 6250
+Wire Wire Line
+	4750 6650 4700 6650
+Wire Wire Line
+	4700 6650 4700 6550
+Connection ~ 4700 6150
+Wire Wire Line
+	4350 6650 4700 6650
+Connection ~ 4700 6650
+Wire Wire Line
+	3600 7050 4050 7050
+Wire Wire Line
+	4050 7050 4050 6850
+Wire Wire Line
+	4050 6550 4050 6500
+Wire Wire Line
+	4050 5050 3100 5050
+Connection ~ 3100 5050
+Wire Wire Line
+	3600 6150 4700 6150
+Wire Wire Line
+	3600 6250 4350 6250
+Wire Wire Line
+	4350 6250 4350 6650
+$Comp
+L Device:C C4
+U 1 1 5FEB619F
+P 4050 7300
+F 0 "C4" H 4165 7346 50  0000 L CNN
+F 1 "0.1u" H 4165 7255 50  0000 L CNN
+F 2 "Capacitor_THT:C_Rect_L7.0mm_W2.0mm_P5.00mm" H 4088 7150 50  0001 C CNN
+F 3 "~" H 4050 7300 50  0001 C CNN
+	1    4050 7300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 7150 4050 7050
+Connection ~ 4050 7050
+$Comp
+L power:GND #PWR015
+U 1 1 5FEB6F9A
+P 4050 7500
+F 0 "#PWR015" H 4050 7250 50  0001 C CNN
+F 1 "GND" H 4055 7327 50  0000 C CNN
+F 2 "" H 4050 7500 50  0001 C CNN
+F 3 "" H 4050 7500 50  0001 C CNN
+	1    4050 7500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 7450 4050 7500
+$Comp
+L Diode:1N4148 D2
+U 1 1 5FEB8303
+P 4300 6800
+F 0 "D2" V 4254 6879 50  0000 L CNN
+F 1 "1N4148" V 4345 6879 50  0000 L CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 4300 6625 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 4300 6800 50  0001 C CNN
+	1    4300 6800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4300 6650 4300 6500
+Wire Wire Line
+	4300 6500 4050 6500
+Connection ~ 4050 6500
+Wire Wire Line
+	4050 6500 4050 5050
+Wire Wire Line
+	4300 6950 4300 7050
+Wire Wire Line
+	4300 7050 4050 7050
+$Comp
+L Device:R R3
+U 1 1 5FEC50E1
+P 4250 5550
+F 0 "R3" V 4043 5550 50  0000 C CNN
+F 1 "330R" V 4134 5550 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 4180 5550 50  0001 C CNN
+F 3 "~" H 4250 5550 50  0001 C CNN
+	1    4250 5550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4650 5550 4400 5550
+Wire Wire Line
+	3600 7350 3850 7350
+Wire Wire Line
+	3600 7250 3850 7250
+Text Label 3650 7250 0    50   ~ 0
+Rx
+Text Label 3650 7350 0    50   ~ 0
+Tx
+$Comp
+L Connector_Generic:Conn_01x05 J2
+U 1 1 5FECA88C
+P 2650 3450
+F 0 "J2" H 2568 3867 50  0000 C CNN
+F 1 "Prog" H 2568 3776 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 2650 3450 50  0001 C CNN
+F 3 "~" H 2650 3450 50  0001 C CNN
+	1    2650 3450
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2850 3250 3000 3250
+Wire Wire Line
+	3000 3250 3000 3000
+Wire Wire Line
+	2850 3350 3100 3350
+Wire Wire Line
+	2850 3650 3100 3650
+$Comp
+L power:GND #PWR04
+U 1 1 5FECFE7B
+P 3100 3350
+F 0 "#PWR04" H 3100 3100 50  0001 C CNN
+F 1 "GND" H 3105 3177 50  0000 C CNN
+F 2 "" H 3100 3350 50  0001 C CNN
+F 3 "" H 3100 3350 50  0001 C CNN
+	1    3100 3350
+	0    -1   -1   0   
+$EndComp
+Text Label 2900 3650 0    50   ~ 0
+~RESET
+Wire Wire Line
+	3600 6050 4100 6050
+Wire Wire Line
+	5150 5550 5150 5700
+Wire Wire Line
+	4100 5550 3600 5550
+$Comp
+L Device:R R1
+U 1 1 5FEAE552
+P 3500 3450
+F 0 "R1" V 3293 3450 50  0000 C CNN
+F 1 "1k" V 3384 3450 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 3430 3450 50  0001 C CNN
+F 3 "~" H 3500 3450 50  0001 C CNN
+	1    3500 3450
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5FEAEF6C
+P 3850 3550
+F 0 "R2" V 3643 3550 50  0000 C CNN
+F 1 "1k" V 3734 3550 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 3780 3550 50  0001 C CNN
+F 3 "~" H 3850 3550 50  0001 C CNN
+	1    3850 3550
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	2850 3450 3350 3450
+Wire Wire Line
+	2850 3550 3700 3550
+Wire Wire Line
+	3650 3450 4250 3450
+Wire Wire Line
+	4000 3550 4250 3550
+Text Label 4100 3450 0    50   ~ 0
+Tx
+Text Label 4100 3550 0    50   ~ 0
+Rx
+Text Label 3400 1950 2    50   ~ 0
+MISO
+Text Label 3400 2050 2    50   ~ 0
+MOSI
+Text Label 3400 2250 2    50   ~ 0
+~RESET
+$Comp
+L power:GND #PWR02
+U 1 1 5D8ABDD5
+P 2650 2650
+F 0 "#PWR02" H 2650 2400 50  0001 C CNN
+F 1 "GND" H 2655 2477 50  0000 C CNN
+F 2 "" H 2650 2650 50  0001 C CNN
+F 3 "" H 2650 2650 50  0001 C CNN
+	1    2650 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L avr_atmega328_prog_adapter-rescue:AVR-ISP-10-Connector J1
+U 1 1 5D88F0F0
+P 2750 2150
+F 0 "J1" H 2470 2246 50  0000 R CNN
+F 1 "AVR-ISP-10" H 2470 2155 50  0000 R CNN
+F 2 "Connector_IDC:IDC-Header_2x05_P2.54mm_Vertical" V 2500 2200 50  0001 C CNN
+F 3 " ~" H 1475 1600 50  0001 C CNN
+	1    2750 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3150 1950 3500 1950
+Wire Wire Line
+	3150 2050 3500 2050
+Wire Wire Line
+	3150 2150 3500 2150
+Wire Wire Line
+	3150 2250 3500 2250
+Wire Wire Line
+	2650 2550 2650 2600
+$Comp
+L power:PWR_FLAG #FLG01
+U 1 1 5FEED05A
+P 2750 2600
+F 0 "#FLG01" H 2750 2675 50  0001 C CNN
+F 1 "PWR_FLAG" V 2750 2728 50  0000 L CNN
+F 2 "" H 2750 2600 50  0001 C CNN
+F 3 "~" H 2750 2600 50  0001 C CNN
+	1    2750 2600
+	0    1    1    0   
+$EndComp
+Connection ~ 2650 2600
+Wire Wire Line
+	2650 2600 2650 2650
+Wire Wire Line
+	2650 2600 2750 2600
+$Comp
+L power:+5V #PWR08
+U 1 1 5FEEFFC1
+P 3100 5050
+F 0 "#PWR08" H 3100 4900 50  0001 C CNN
+F 1 "+5V" H 3115 5223 50  0000 C CNN
+F 2 "" H 3100 5050 50  0001 C CNN
+F 3 "" H 3100 5050 50  0001 C CNN
+	1    3100 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR01
+U 1 1 5FEF04B7
+P 2650 1600
+F 0 "#PWR01" H 2650 1450 50  0001 C CNN
+F 1 "+5V" H 2665 1773 50  0000 C CNN
+F 2 "" H 2650 1600 50  0001 C CNN
+F 3 "" H 2650 1600 50  0001 C CNN
+	1    2650 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2650 1600 2650 1650
+$Comp
+L MCU_Microchip_ATmega:ATmega16A-PU U3
+U 1 1 5FEFD5E1
+P 7300 6550
+F 0 "U3" H 7300 6650 50  0000 C CNN
+F 1 "ATmega16A-PU" H 7300 6450 50  0000 C CNN
+F 2 "Socket:DIP_Socket-40_W11.9_W12.7_W15.24_W17.78_W18.5_3M_240-1280-00-0602J" H 7300 6550 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-8154-8-bit-AVR-ATmega16A_Datasheet.pdf" H 7300 6550 50  0001 C CNN
+	1    7300 6550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6700 4850 6250 4850
+Text Label 6450 4850 0    50   ~ 0
+~RESET
+$Comp
+L power:+5V #PWR03
+U 1 1 5FF2B3FD
+P 3000 3000
+F 0 "#PWR03" H 3000 2850 50  0001 C CNN
+F 1 "+5V" H 3015 3173 50  0000 C CNN
+F 2 "" H 3000 3000 50  0001 C CNN
+F 3 "" H 3000 3000 50  0001 C CNN
+	1    3000 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR07
+U 1 1 5FF2C995
+P 13750 4500
+F 0 "#PWR07" H 13750 4350 50  0001 C CNN
+F 1 "+5V" H 13765 4673 50  0000 C CNN
+F 2 "" H 13750 4500 50  0001 C CNN
+F 3 "" H 13750 4500 50  0001 C CNN
+	1    13750 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7400 4550 7400 4450
+Wire Wire Line
+	7400 4450 7300 4450
+Wire Wire Line
+	7300 4450 7300 4550
+Connection ~ 7400 4450
+Wire Wire Line
+	7400 4450 7400 4350
+$Comp
+L power:+5V #PWR09
+U 1 1 5FF30D07
+P 6600 5450
+F 0 "#PWR09" H 6600 5300 50  0001 C CNN
+F 1 "+5V" V 6615 5578 50  0000 L CNN
+F 2 "" H 6600 5450 50  0001 C CNN
+F 3 "" H 6600 5450 50  0001 C CNN
+	1    6600 5450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6700 5450 6600 5450
+Wire Wire Line
+	7900 6450 8450 6450
+Wire Wire Line
+	7900 6350 8450 6350
+Wire Wire Line
+	7900 6250 8450 6250
+Text Label 8050 6250 0    50   ~ 0
+MOSI
+Text Label 8050 6350 0    50   ~ 0
+MISO
+Text Label 8050 6450 0    50   ~ 0
+SCK
+Wire Wire Line
+	7900 7550 8450 7550
+Wire Wire Line
+	7900 7650 8450 7650
+Text Label 8100 7550 0    50   ~ 0
+Rx
+Text Label 8100 7650 0    50   ~ 0
+Tx
+$Comp
+L power:GND #PWR018
+U 1 1 5FF3F466
+P 7300 8800
+F 0 "#PWR018" H 7300 8550 50  0001 C CNN
+F 1 "GND" H 7305 8627 50  0000 C CNN
+F 2 "" H 7300 8800 50  0001 C CNN
+F 3 "" H 7300 8800 50  0001 C CNN
+	1    7300 8800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7300 8550 7300 8800
+NoConn ~ 7900 4850
+NoConn ~ 7900 4950
+NoConn ~ 7900 5050
+NoConn ~ 7900 5150
+NoConn ~ 7900 5250
+NoConn ~ 7900 5350
+NoConn ~ 7900 5450
+NoConn ~ 7900 5550
+NoConn ~ 7900 5850
+NoConn ~ 7900 5950
+NoConn ~ 7900 6050
+NoConn ~ 7900 6150
+NoConn ~ 7900 6650
+NoConn ~ 7900 6750
+NoConn ~ 7900 6850
+NoConn ~ 7900 6950
+NoConn ~ 7900 7050
+NoConn ~ 7900 7150
+NoConn ~ 7900 7250
+NoConn ~ 7900 7350
+NoConn ~ 7900 7750
+NoConn ~ 7900 7850
+NoConn ~ 7900 7950
+NoConn ~ 7900 8050
+NoConn ~ 7900 8150
+NoConn ~ 7900 8250
+$Comp
+L MCU_Microchip_ATtiny:ATtiny2313A-PU U1
+U 1 1 5FF7603D
+P 10350 5700
+F 0 "U1" H 10350 5800 50  0000 C CNN
+F 1 "ATtiny2313A-PU" H 10300 5600 50  0000 C CNN
+F 2 "Socket:DIP_Socket-20_W4.3_W5.08_W7.62_W10.16_W10.9_3M_220-3342-00-0602J" H 10350 5700 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/doc8246.pdf" H 10350 5700 50  0001 C CNN
+	1    10350 5700
+	1    0    0    -1  
+$EndComp
+Text Label 9500 4900 0    50   ~ 0
+~RESET
+$Comp
+L power:+5V #PWR05
+U 1 1 5FF84AEE
+P 7400 4350
+F 0 "#PWR05" H 7400 4200 50  0001 C CNN
+F 1 "+5V" H 7415 4523 50  0000 C CNN
+F 2 "" H 7400 4350 50  0001 C CNN
+F 3 "" H 7400 4350 50  0001 C CNN
+	1    7400 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR014
+U 1 1 5FF85AD4
+P 10350 6900
+F 0 "#PWR014" H 10350 6650 50  0001 C CNN
+F 1 "GND" H 10355 6727 50  0000 C CNN
+F 2 "" H 10350 6900 50  0001 C CNN
+F 3 "" H 10350 6900 50  0001 C CNN
+	1    10350 6900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10350 4500 10350 4600
+Wire Wire Line
+	10350 6800 10350 6900
+$Comp
+L MCU_Microchip_ATmega:ATmega8A-PU U2
+U 1 1 5FF9BD34
+P 13650 6000
+F 0 "U2" H 13650 6100 50  0000 C CNN
+F 1 "ATmega8A-PU" H 13650 5900 50  0000 C CNN
+F 2 "Socket:DIP_Socket-28_W6.9_W7.62_W10.16_W12.7_W13.5_3M_228-4817-00-0602J" H 13650 6000 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/Microchip%208bit%20mcu%20AVR%20ATmega8A%20data%20sheet%2040001974A.pdf" H 13650 6000 50  0001 C CNN
+	1    13650 6000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14250 6300 14750 6300
+Wire Wire Line
+	14250 6400 14750 6400
+Wire Wire Line
+	14250 5200 14750 5200
+Wire Wire Line
+	14250 5300 14750 5300
+Wire Wire Line
+	14250 5400 14750 5400
+Text Label 12800 4900 0    50   ~ 0
+~RESET
+$Comp
+L power:+5V #PWR06
+U 1 1 5FFBBC22
+P 10350 4500
+F 0 "#PWR06" H 10350 4350 50  0001 C CNN
+F 1 "+5V" H 10365 4673 50  0000 C CNN
+F 2 "" H 10350 4500 50  0001 C CNN
+F 3 "" H 10350 4500 50  0001 C CNN
+	1    10350 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR016
+U 1 1 5FFBC336
+P 13650 7500
+F 0 "#PWR016" H 13650 7250 50  0001 C CNN
+F 1 "GND" H 13655 7327 50  0000 C CNN
+F 2 "" H 13650 7500 50  0001 C CNN
+F 3 "" H 13650 7500 50  0001 C CNN
+	1    13650 7500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13650 7400 13650 7500
+Wire Wire Line
+	13750 7400 13750 7500
+Wire Wire Line
+	13750 7500 13650 7500
+Connection ~ 13650 7500
+Wire Wire Line
+	13750 4500 13650 4500
+Wire Wire Line
+	13650 4500 13650 4600
+Wire Wire Line
+	13750 4500 13750 4600
+Connection ~ 13750 4500
+$Comp
+L power:+5V #PWR010
+U 1 1 5FFCF80A
+P 12950 5500
+F 0 "#PWR010" H 12950 5350 50  0001 C CNN
+F 1 "+5V" V 12965 5628 50  0000 L CNN
+F 2 "" H 12950 5500 50  0001 C CNN
+F 3 "" H 12950 5500 50  0001 C CNN
+	1    12950 5500
+	0    -1   -1   0   
+$EndComp
+Text Label 14450 5200 0    50   ~ 0
+MOSI
+Text Label 14450 5300 0    50   ~ 0
+MISO
+Text Label 14450 5400 0    50   ~ 0
+SCK
+Text Label 14450 6300 0    50   ~ 0
+Rx
+Text Label 14450 6400 0    50   ~ 0
+Tx
+Wire Wire Line
+	13050 5500 12950 5500
+Wire Wire Line
+	10950 5800 11300 5800
+Wire Wire Line
+	10950 5900 11300 5900
+Wire Wire Line
+	10950 5400 11300 5400
+Wire Wire Line
+	10950 5500 11300 5500
+Wire Wire Line
+	10950 5600 11300 5600
+Text Label 11050 5400 0    50   ~ 0
+MOSI
+Text Label 11050 5500 0    50   ~ 0
+MISO
+Text Label 11050 5600 0    50   ~ 0
+SCK
+Text Label 11050 5800 0    50   ~ 0
+Rx
+Text Label 11050 5900 0    50   ~ 0
+Tx
+NoConn ~ 10950 5000
+NoConn ~ 10950 5100
+NoConn ~ 10950 5200
+NoConn ~ 10950 5300
+NoConn ~ 10950 6000
+NoConn ~ 10950 6100
+NoConn ~ 10950 6200
+NoConn ~ 10950 6300
+NoConn ~ 10950 6400
+NoConn ~ 14250 5000
+NoConn ~ 14250 5100
+NoConn ~ 14250 5600
+NoConn ~ 14250 5700
+NoConn ~ 14250 5800
+NoConn ~ 14250 5900
+NoConn ~ 14250 6000
+NoConn ~ 14250 6100
+NoConn ~ 14250 6500
+NoConn ~ 14250 6600
+NoConn ~ 14250 6700
+NoConn ~ 14250 6800
+NoConn ~ 14250 6900
+NoConn ~ 14250 7000
+Wire Wire Line
+	14250 4900 14750 4900
+Wire Wire Line
+	10950 4900 11300 4900
+Wire Wire Line
+	7900 5750 8450 5750
+Text Label 3750 5550 0    50   ~ 0
+led0
+Text Label 8050 5750 0    50   ~ 0
+led0
+Text Label 14450 4900 0    50   ~ 0
+led0
+Text Label 11050 4900 0    50   ~ 0
+led0
+Wire Wire Line
+	13050 4900 12700 4900
+Wire Wire Line
+	13050 5100 12700 5100
+Wire Wire Line
+	13050 5300 12700 5300
+Wire Wire Line
+	9750 4900 9400 4900
+Wire Wire Line
+	9750 5100 9400 5100
+Wire Wire Line
+	9750 5300 9400 5300
+Wire Wire Line
+	6700 5050 6250 5050
+Wire Wire Line
+	6700 5250 6250 5250
+Text Label 3800 6150 0    50   ~ 0
+XTAL1
+Text Label 3800 6250 0    50   ~ 0
+XTAL2
+Text Label 6450 5050 0    50   ~ 0
+XTAL1
+Text Label 6450 5250 0    50   ~ 0
+XTAL2
+Text Label 9500 5100 0    50   ~ 0
+XTAL1
+Text Label 9500 5300 0    50   ~ 0
+XTAL2
+Text Label 12800 5100 0    50   ~ 0
+XTAL1
+Text Label 12800 5300 0    50   ~ 0
+XTAL2
+$Comp
+L Graphic:Logo_Open_Hardware_Large LOGO1
+U 1 1 600ABA58
+P 11100 10600
+F 0 "LOGO1" H 11100 11100 50  0001 C CNN
+F 1 "Logo_Open_Hardware_Large" H 11100 10200 50  0001 C CNN
+F 2 "Symbol:OSHW-Logo2_14.6x12mm_SilkScreen" H 11100 10600 50  0001 C CNN
+F 3 "~" H 11100 10600 50  0001 C CNN
+	1    11100 10600
+	1    0    0    -1  
+$EndComp
+$Comp
+L logo-sq7eqe:CC-BY-SA G1
+U 1 1 600ACC5C
+P 9700 10500
+F 0 "G1" H 9700 10391 60  0001 C CNN
+F 1 "CC-BY-SA" H 9700 10609 60  0001 C CNN
+F 2 "logo-sq7eqe:cc-by-sa" H 9700 10500 50  0001 C CNN
+F 3 "" H 9700 10500 50  0001 C CNN
+	1    9700 10500
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name PSmod1202)(type Legacy)(uri ${KIPRJMOD}/PSmod1202.lib)(options "")(descr ""))
+  (lib (name PSmod1202-rescue)(type Legacy)(uri ${KIPRJMOD}/PSmod1202-rescue.lib)(options "")(descr ""))
+)
